@@ -1,0 +1,27 @@
+{
+  "name": "thell-barrio-landing",
+  "version": "1.0.0",
+  "description": "Landing page oficial para Thell Barrio - banda mexicana de latin metal",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch",
+    "build": "node build.js",
+    "build:css": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --minify",
+    "serve": "npx serve dist -p 3000",
+    "preview": "npm run build && npm run serve",
+    "clean": "rm -rf dist",
+    "deploy": "npm run clean && npm run build",
+    "watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "thell-barrio",
+    "latin-metal",
+    "banda-mexicana",
+    "landing-page"
+  ],
+  "author": "Thell Barrio Dev Team",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

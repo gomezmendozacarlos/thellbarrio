@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build output (descomenta la siguiente línea si no quieres commitear builds)
+# dist/
+
+# Development files
+.DS_Store
+.vscode/
+*.log
+*.tmp
+
+# Tailwind CSS output durante desarrollo
+output.css
+
+# Cache files
+.cache/
+.temp/ 

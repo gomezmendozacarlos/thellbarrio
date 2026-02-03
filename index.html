@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thell Barrio - Banda Mexicana de Latin Metal</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Thell Barrio - Banda mexicana de latin metal que combina elementos tradicionales latinos con la potencia del metal moderno. Música urbana mexicana con sonido único.">
+    <meta name="keywords" content="Thell Barrio, latin metal, banda mexicana, metal latino, música mexicana, conciertos, rock en español">
+    <meta name="author" content="Thell Barrio">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Thell Barrio - Banda Mexicana de Latin Metal">
+    <meta property="og:description" content="Banda mexicana de latin metal que combina elementos tradicionales latinos con la potencia del metal moderno.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thell-barrio.com">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thell Barrio - Banda Mexicana de Latin Metal">
+    <meta name="twitter:description" content="Banda mexicana de latin metal que combina elementos tradicionales latinos con la potencia del metal moderno.">
+    <meta name="twitter:image" content="./assets/images/og-image.jpg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <link href="./dist/output.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    
+    <!-- Schema.org JSON-LD para eventos musicales -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Thell Barrio",
+        "genre": "Latin Metal",
+        "description": "Banda mexicana de latin metal que combina elementos tradicionales latinos con la potencia del metal moderno",
+        "url": "https://thell-barrio.com",
+        "sameAs": [
+            "https://www.facebook.com/thellbarrio",
+            "https://www.instagram.com/thellbarrio",
+            "https://www.youtube.com/@thellbarrio"
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-900 overflow-x-hidden">
+    
+    <!-- Navigation Menu -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="w-full px-4 lg:px-8">
+            <!-- Desktop Menu (shown when not scrolled) -->
+            <div id="desktop-menu" class="flex items-center justify-between py-4">
+                <!-- Logo en extremo izquierdo -->
+                <div class="flex-shrink-0">
+                    <a href="#inicio" class="hover:opacity-80 transition-opacity duration-300">
+                        <img src="./assets/images/logo.png" alt="Thell Barrio" class="h-10 w-auto">
+                    </a>
+                </div>
+                
+                <!-- Enlaces centrados -->
+                <ul class="flex space-x-8 text-white font-medium">
+                    <li><a href="#video" class="hover:text-orange-primary transition-colors duration-300">Video</a></li>
+                    <li><a href="#biografia" class="hover:text-orange-primary transition-colors duration-300">Biografía</a></li>
+                    <li><a href="#fechas" class="hover:text-orange-primary transition-colors duration-300">Fechas</a></li>
+                    <li><a href="#contacto" class="hover:text-orange-primary transition-colors duration-300">Contacto</a></li>
+                </ul>
+                
+                <!-- Espacio derecho para balance -->
+                <div class="flex-shrink-0 w-10"></div>
+            </div>
+            
+            <!-- Hamburger Menu (shown on mobile or when scrolled) -->
+            <div id="hamburger-menu" class="flex items-center justify-end py-5" style="display: none;">
+                <button id="hamburger-btn" class="bg:stone-950 text-white focus:outline-none" >
+                    <img src="./assets/images/icons/hamburger-icon.png" alt="Menu" class="w-[36px] sm:w-[48px] md:w-[60px] lg:w-[70px]">
+                </button>
+            </div>
+            
+            <!-- Menu Dropdown -->
+            <div id="menu-dropdown" class="hidden bg-white shadow-2xl fixed top-0 right-0 bottom-0 z-50 flex items-center justify-center w-full max-w-[250px]">
+                <!-- Close button -->
+                <button id="close-menu-btn" class="absolute top-8 right-8 text-black hover:text-orange-primary transition-colors duration-300 text-3xl font-light">
+                    ×
+                </button>
+                
+                <div class="w-full px-8">
+                    <ul class="flex flex-col font-medium text-center space-y-8">
+                        <li><a href="#inicio" class="block py-4 px-6 text-2xl text-black hover:text-orange-primary transition-colors duration-300">Inicio</a></li>
+                        <li><a href="#video" class="block py-4 px-6 text-2xl text-black hover:text-orange-primary transition-colors duration-300">Video</a></li>
+                        <li><a href="#biografia" class="block py-4 px-6 text-2xl text-black hover:text-orange-primary transition-colors duration-300">Biografía</a></li>
+                        <li><a href="#fechas" class="block py-4 px-6 text-2xl text-black hover:text-orange-primary transition-colors duration-300">Fechas</a></li>
+                        <li><a href="#contacto" class="block py-4 px-6 text-2xl text-black hover:text-orange-primary transition-colors duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative">
+        <!-- Hero image - 100% width, height auto -->
+        <img src="./assets/images/band-photo1.jpg" alt="Thell Barrio Band" 
+             class="w-full h-auto block" loading="eager">
+        
+        <!-- Overlay gradient -->
+        <div class="absolute inset-0 bg-gradient-hero"></div>
+        
+        <!-- Logo superpuesto -->
+        <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-20 left-1/2 transform -translate-x-1/2 text-center px-4">
+            <img src="./assets/images/logo.png" alt="Thell Barrio Logo" 
+                 class="w-4/5 mx-auto drop-shadow-2xl">
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="section-padding bg-white">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-heading text-center text-gray-900 mb-12">Video</h2>
+            <div class="w-full aspect-video">
+                <iframe src="https://www.youtube.com/embed/FCUCViVjDGs?si=3BAIc6oaWvaQ3S_k" title="Thell Barrio - Tlaltecuhtli I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-full h-full"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografía Section -->
+    <section id="biografia" class="section-padding bg-white border-t border-gray-300">
+        <div class="container-custom">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-heading text-gray-900 mb-8">Sobre Thell Barrio</h2>
+                <div class="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+                    <p class="mb-6">
+                        Thell Barrio es una banda mexicana de latin metal que combina elementos tradicionales latinos 
+                        con la potencia del metal moderno. Su música refleja la cultura urbana mexicana con un sonido 
+                        único y energético que ha cautivado audiencias en todo el país.
+                    </p>
+                    <p class="mb-6">
+                        Formada en las calles de México, la banda ha logrado crear un estilo distintivo que fusiona 
+                        ritmos latinos con la intensidad del metal, creando una experiencia musical que trasciende 
+                        géneros y conecta con las raíces culturales mexicanas.
+                    </p>
+                    <p>
+                        Con una propuesta visual y sonora que celebra la identidad mexicana contemporánea, 
+                        Thell Barrio se ha posicionado como una de las bandas más prometedoras del latin metal actual.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fechas de Conciertos Section -->
+    <section id="fechas" class="section-padding bg-white border-t border-gray-300">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-heading text-center text-gray-900 mb-12">Próximas Fechas</h2>
+            
+            <!-- Container de fechas -->
+            <div id="concerts-container" class="max-w-4xl mx-auto space-y-6">
+                <!-- Las fechas se cargarán dinámicamente con JavaScript -->
+            </div>
+            
+            <!-- Mensaje cuando no hay fechas -->
+            <div id="no-concerts" class="hidden text-center text-gray-600">
+                <p class="text-lg">No hay fechas programadas en este momento.</p>
+                <p class="mt-2">¡Síguenos en redes sociales para estar al día con nuestros próximos conciertos!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Redes Sociales Section -->
+    <section id="contacto" class="section-padding bg-white border-t border-gray-300">
+        <div class="container-custom">
+            <h2 class="text-3xl md:text-4xl font-heading text-center text-gray-900 mb-12">Síguenos</h2>
+            
+            <div class="flex justify-center items-center space-x-8">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/thellbarrio.oficial" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="transform hover:scale-110 transition-transform duration-300"
+                   aria-label="Síguenos en Facebook">
+                    <img src="./assets/images/icons/facebook.png" alt="Thell Barrio Facebook" class="w-12 h-12 sm:w-16 sm:h-16">
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/thellbarriooficial/" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="transform hover:scale-110 transition-transform duration-300"
+                   aria-label="Síguenos en Instagram">
+                    <img src="./assets/images/icons/instagram.png" alt="Thell Barrio Instagram" class="w-12 h-12 sm:w-16 sm:h-16">
+                </a>
+                
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/channel/UCV28vkXXdTdxtr4-XM6hTlA" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="transform hover:scale-110 transition-transform duration-300"
+                   aria-label="Síguenos en YouTube">
+                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 sm:w-16 sm:h-16">
+                        <rect width="64" height="64" rx="12" fill="#FF0000"/>
+                        <path d="M50.8 24.4C50.2 22.2 48.6 20.6 46.4 20C43.2 19 32 19 32 19C32 19 20.8 19 17.6 20C15.4 20.6 13.8 22.2 13.2 24.4C12 27.6 12 32 12 32C12 32 12 36.4 13.2 39.6C13.8 41.8 15.4 43.4 17.6 44C20.8 45 32 45 32 45C32 45 43.2 45 46.4 44C48.6 43.4 50.2 41.8 50.8 39.6C52 36.4 52 32 52 32C52 32 52 27.6 50.8 24.4ZM28.8 37.2V26.8L38.4 32L28.8 37.2Z" fill="white"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@thellbarrio" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="transform hover:scale-110 transition-transform duration-300"
+                   aria-label="Síguenos en TikTok">
+                    <img src="./assets/images/icons/tiktok.png" alt="Thell Barrio TikTok" class="w-12 h-12 sm:w-16 sm:h-16">
+                </a>
+            </div>
+            
+            <!-- Información de contacto -->
+            <div class="text-center mt-12">
+                <p class="text-gray-700 text-lg mb-2">Para bookings y contacto:</p>
+                <a href="mailto:info@thellbarrio.com" class="text-orange-primary hover:text-orange-dark transition-colors duration-300 text-xl font-medium">
+                    thellbarrioinfo@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-300 text-gray-600 py-8">
+        <div class="container-custom">
+            <div class="text-center">
+                <p class="text-xs">&copy; 2025 Thell Barrio. De Santa Mago para el mundo. 🇲🇽​ 🤘🏽​</p>
+                <p class="mt-2 text-xs">Sitio desarrollado por <a href="https://gomezmendozacarlos.github.io/devportfolio/" target="_blank" rel="noopener noreferrer" class="text-orange-primary hover:text-orange-dark transition-colors duration-300">itos</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="./src/js/main.js?v=2.0"></script>
+    <script src="./src/js/menu.js?v=2.0"></script>
+    <script src="./src/js/scroll.js?v=2.0"></script>
+    <script src="./src/js/concerts.js?v=3.1"></script>
+</body>
+</html> 
