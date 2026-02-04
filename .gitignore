@@ -4,6 +4,7 @@ package-lock.json
 
 # Build output (descomenta la siguiente línea si no quieres commitear builds)
 dist/
+.firebase/
 
 # Development files
 .DS_Store
