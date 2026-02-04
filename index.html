@@ -133,9 +133,9 @@
     <!-- Biografía Section -->
     <section id="biografia" class="section-padding bg-white border-t border-gray-300">
         <div class="container-custom">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-heading text-gray-900 mb-8">Sobre Thell Barrio</h2>
-                <div class="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading text-gray-900 mb-8 text-center">Sobre Thell Barrio</h2>
+                <div class="prose prose-lg mx-auto text-gray-700 leading-relaxed text-justify">
                     <p class="mb-4">
                         Formada en 2004 en Zapopan, Jalisco, México, Thell Barrio ha
                         definido su estilo musical como latincore, término acuñado a partir
@@ -144,26 +144,31 @@
                         proyectos más sólidos en su medio, realizando giras por Europa,
                         México y Latinoamérica.
                     </p>
-                    <p class="mb-4">
-                        La agrupación integrada por Charro y Patrón en las guitarras, Solín en las
-                        percusiones, Chamuco en el bajo, Drummachine en la batería y Mexa en la voz, presenta
-                        en 2026 su cuarto álbum de estudio titulado TRECE. En esta producción, la banda explora
-                        nuevos sonidos para abordar temas de la vida cotidiana desde la denuncia y la conciencia
-                        social, compartiendo a través de sus canciones las complejas condiciones de vida que día a
-                        día enfrentan millones de personas.
-                    </p>
-                    <p class="mb-4">
-                        A lo largo de su trayectoria, Thell Barrio ha mantenido una postura activa con un discurso
-                        sociopolítico que defienden la libertad y la dignificación de las luchas sociales, sin
-                        alinearse con tendencias, partidos o colores, por el contrario, construye su propio criterio
-                        respaldando narrativas libertarias que buscan igualdad y justicia.
-                    </p>
-                    <p class="mb-4">
-                        Con el paso de los años Thell Barrio se mantiene firme y fuerte, pero no inmutable, pues
-                        ha evolucionado para dar espacio a nuevas formas, comprendiendo y empatizando con un
-                        entorno en constante cambio, buscando siempre la unidad: porque en el mundo todos
-                        somos una solo barrio, una sola familia.
-                    </p>
+                    <div id="bio-extra" class="hidden">
+                        <p class="mb-4">
+                            La agrupación integrada por Charro y Patrón en las guitarras, Solín en las
+                            percusiones, Chamuco en el bajo, Drummachine en la batería y Mexa en la voz, presenta
+                            en 2026 su cuarto álbum de estudio titulado TRECE. En esta producción, la banda explora
+                            nuevos sonidos para abordar temas de la vida cotidiana desde la denuncia y la conciencia
+                            social, compartiendo a través de sus canciones las complejas condiciones de vida que día a
+                            día enfrentan millones de personas.
+                        </p>
+                        <p class="mb-4">
+                            A lo largo de su trayectoria, Thell Barrio ha mantenido una postura activa con un discurso
+                            sociopolítico que defienden la libertad y la dignificación de las luchas sociales, sin
+                            alinearse con tendencias, partidos o colores, por el contrario, construye su propio criterio
+                            respaldando narrativas libertarias que buscan igualdad y justicia.
+                        </p>
+                        <p class="mb-4">
+                            Con el paso de los años Thell Barrio se mantiene firme y fuerte, pero no inmutable, pues
+                            ha evolucionado para dar espacio a nuevas formas, comprendiendo y empatizando con un
+                            entorno en constante cambio, buscando siempre la unidad: porque en el mundo todos
+                            somos una solo barrio, una sola familia.
+                        </p>
+                    </div>
+                    <button id="bio-toggle" onclick="toggleBio()" class="btn-primary inline-block text-center text-sm px-3 py-2">
+                        Leer más
+                    </button>
                 </div>
             </div>
         </div>
@@ -233,7 +238,7 @@
             
             <!-- Información de contacto -->
             <div class="text-center mt-12">
-                <p class="text-gray-700 text-lg mb-2">Para bookings y contacto:</p>
+                <p class="text-gray-700 text-lg mb-2">Para booking y contacto:</p>
                 <a href="mailto:info@thellbarrio.com" class="text-orange-primary hover:text-orange-dark transition-colors duration-300 text-xl font-medium">
                     thellbarrioinfo@gmail.com
                 </a>

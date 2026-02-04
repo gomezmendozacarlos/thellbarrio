@@ -9,6 +9,6 @@ Este directorio contiene la versión optimizada y minificada del sitio web.
 - `assets/` - Imágenes y recursos estáticos
 - `build-info.json` - Información del build
 
-## Generado el: 3/2/2026, 4:28:35 p.m.
+## Generado el: 3/2/2026, 6:14:23 p.m.
 
 Para servir este sitio, puedes usar cualquier servidor web estático apuntando a este directorio.

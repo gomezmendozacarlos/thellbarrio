@@ -103,6 +103,18 @@ function debounce(func, wait) {
     };
 }
 
+function toggleBio() {
+    const bioExtra = document.getElementById('bio-extra');
+    const bioToggle = document.getElementById('bio-toggle');
+    if (bioExtra.classList.contains('hidden')) {
+        bioExtra.classList.remove('hidden');
+        bioToggle.textContent = 'Leer menos';
+    } else {
+        bioExtra.classList.add('hidden');
+        bioToggle.textContent = 'Leer más';
+    }
+}
+
 // Export functions for use in other modules
 window.ThellBarrio = {
     closeMenuIfOpen,

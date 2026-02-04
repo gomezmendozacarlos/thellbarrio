@@ -46,7 +46,7 @@ const concertsData = [
         year: 2026,
         month: 5,
         day:23,
-        venue: '',
+        venue: 'TBA',
         city: 'Cancun, QROO',
         ticketUrl: null,
     },
@@ -189,9 +189,10 @@ function createConcertElement(concert) {
             </div>
             
             <!-- Botón de boletos -->
-            <div class="flex-shrink-0 ">
+            
+            
                 ${createTicketButton(concert)}
-            </div>
+            
         </div>
     `;
     
@@ -205,6 +206,7 @@ function createTicketButton(concert) {
     if (concert.ticketUrl) {
         // Mostrar botón de boletos
         return `
+        <div class="flex-shrink-0">
             <a href="${concert.ticketUrl}" 
                target="_blank" 
                rel="noopener noreferrer"
@@ -212,14 +214,12 @@ function createTicketButton(concert) {
                onclick="trackTicketClick('${concert.id}')">
                 Boletos
             </a>
+        </div>
         `;
     } else {
         // Ocultar botón cuando no hay boletos disponibles
         return `
-            <div class="opacity-0 invisible min-w-[100px] sm:min-w-[120px]" aria-hidden="true">
-                <div class="btn-primary inline-block text-center text-sm sm:text-base px-4 py-2 sm:px-6 sm:py-3">
-                    Boletos
-                </div>
+            <div class="min-w-[100px] sm:min-w-[120px]" aria-hidden="true" sm:hidden>
             </div>
         `;
     }
