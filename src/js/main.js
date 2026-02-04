@@ -119,5 +119,6 @@ function toggleBio() {
 window.ThellBarrio = {
     closeMenuIfOpen,
     formatDateSpanish,
-    debounce
+    debounce,
+    toggleBio
 }; 
