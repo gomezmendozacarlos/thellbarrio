@@ -53,11 +53,17 @@ thellbarrio/
 # Instalar dependencias
 npm install
 
+# Correr local server
+npx serve .
+
 # Modo desarrollo (watch)
 npm run dev
 
 # Compilar para producción
 npm run build
+
+# Publicar en firebase
+firebase deploy
 
 # Compilar una vez
 npx tailwindcss -i ./src/css/input.css -o ./dist/output.css
