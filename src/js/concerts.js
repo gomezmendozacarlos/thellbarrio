@@ -187,12 +187,8 @@ function createConcertElement(concert) {
             <div class="text-sm sm:text-base text-gray-600 font-medium">
                 ${concert.city}
             </div>
-            
             <!-- Botón de boletos -->
-            
-            
                 ${createTicketButton(concert)}
-            
         </div>
     `;
     
