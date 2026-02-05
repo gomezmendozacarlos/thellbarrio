@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'heading': ['Montserrat', 'system-ui', 'sans-serif'],
+        'avestrava': ['avestrava', 'sans-serif'],
       },
       spacing: {
         '18': '4.5rem',

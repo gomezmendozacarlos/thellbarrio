@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'avestrava';
+  src: url('../src/fonts/AvestravaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,4 +93,4 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
   }
-} 
+}
