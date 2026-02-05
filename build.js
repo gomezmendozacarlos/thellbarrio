@@ -99,7 +99,17 @@ const minifiedHTML = minifyHTML(htmlContent);
 fs.writeFileSync('./dist/index.html', minifiedHTML);
 console.log('✅ HTML optimizado');
 
-// 4. Copiar assets (imágenes, iconos, etc.)
+// 4. Copiar fuentes
+console.log('🔤 Copiando fuentes...');
+if (fs.existsSync('./src/fonts')) {
+    fs.mkdirSync('./dist/src/fonts', { recursive: true });
+    copyRecursive('./src/fonts', './dist/src/fonts');
+    console.log('✅ Fuentes copiadas');
+} else {
+    console.log('⚠️ Carpeta src/fonts no encontrada');
+}
+
+// 5. Copiar assets (imágenes, iconos, etc.)
 console.log('🖼️ Copiando assets...');
 
 function copyRecursive(src, dest) {
